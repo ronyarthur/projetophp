@@ -1,37 +1,58 @@
 *{
     margin: 0;
-    background-color: #cfcfcf
+    background-color: #cfcfcf;
+    
 }
 
 .topo{
     display: flex;
+    background-color: #c2c1c1;
     
 }
 .logo{
     flex: 1;
     background-color: #c2c1c1;
     text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 7px;
 }
 .navbar{
     flex: 1;
     background-color: #c2c1c1;
     text-align: right;
     padding-right: 90px;
-    padding-top: 50px;
+    padding-top: 45px;
 }
 #logotipo{
     background-color: #c2c1c1;
+    
 }
-#redirecionar1, #redirecionar2, #redirecionar3, #redirecionar4{
+#redirecionar1, #redirecionar2, #redirecionar3{
     background-color: #c2c1c1;
     text-decoration: none;
     color: black;
     margin-right: 20px;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 20px;
     
+    
+}
+#redirecionar4{
+    margin-left: 20px;
+    background-color: #c2c1c1;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
 
+
+
+
+#redirecionar1:hover, #redirecionar2:hover, #redirecionar3:hover, #redirecionar4:hover{
+    text-decoration: underline;
+}
 .links{
     text-align: center;
     background-color: #8D8F8C;
@@ -42,8 +63,6 @@
 #fechado, #aberto, #viseira, #flip{
     background-color: #8D8F8C;
     text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
     color: black;
@@ -52,8 +71,7 @@
     
 }
 #fechado:hover, #aberto:hover, #viseira:hover, #flip:hover{
-    background-color: black;
-    color: #cfcfcf;
+    text-decoration: underline;
 }
 
 .linha{
@@ -63,11 +81,13 @@
 
 .imagemGrande{
     text-align: right;
+    
 }
 
 .slogan{
     padding-top: 80px;
     padding-left: 60px ;
+    background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
 }
 
 .slogan, .imagemGrande{
