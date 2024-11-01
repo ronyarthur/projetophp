@@ -10,6 +10,10 @@
     font-family: robotoItalico;
     src: url(../fontes/Roboto-LightItalic.ttf);
 }
+@font-face{
+    font-family: robotoNormal;
+    src: url(../fontes/Roboto-Light.ttf);
+}
 
 *{
     margin: 0;
@@ -71,86 +75,31 @@
     padding-top: 15px;
 }
 
-#fechado, #aberto, #viseira, #flip{
-    background-color: #8D8F8C;
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: robotoItalico;
-    
-}
-#fechado:hover, #aberto:hover, #viseira:hover, #flip:hover{
-    text-decoration: underline;
-    
-}
-
-.linha{
-    display: flex;
-    background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
-}
-
-.imagemGrande{
-    text-align: right;
-    
-}
-
-.slogan{
-    padding-top: 80px;
-    padding-left: 60px ;
-    background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
-    font-size: 20px;
-    font-family: slogan;
-}
-
-.slogan{
-    margin-left: 40px;
-}
-.slogan, .imagemGrande{
-    flex: 1;
-    
-}
-
-#botaoSlogan{
-    font-size: 20px;
-    margin-top: 20px;
-    background-color: rgb(63, 21, 21);
-    border-radius: 20px;
-    color: white;
-    font-family: robotoItalico;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-#botaoSlogan:target{
-    color: blue;
-}
-
 .titulo{
-    text-align: center;
-    margin-bottom: 40px;
     margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-family: roboto;
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+}
+.texto{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: robotoNormal;
+    color: rgb(124, 132, 139);
+    line-height: 21px;
+    font-size: 14px;
 }
 
-.capacetesAbertos, .capacetesFechados{
-    display: flex;
-    
-}
-#img1, #img2, #img3{
-    flex: 1;
+.imagens{
     text-align: center;
-    margin-bottom: 35px;
-} 
-
-.tituloDaArea{
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 90px;
-    margin-top: 50px;
-    font-family: robotoItalico;
+}
+.fundador{
+    font-family: roboto;
+    color: #323232;
 }
 
 .rodape{

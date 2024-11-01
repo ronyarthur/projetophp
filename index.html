@@ -16,10 +16,10 @@
       </div>
       <!--LINKS DE CIMA-->
       <div class="navbar">
-        <a href="" id="redirecionar1">Pagina principal</a>
-        <a href="" id="redirecionar2">Produtos</a>
-        <a href="" id="redirecionar3">Sobre nós</a>
-        <a href="" id="redirecionar3">Contato</a>
+        <a href="index.html" id="redirecionar1">Pagina principal</a>
+        <a href=""  id="redirecionar2">Produtos</a>
+        <a href="sobrenos.html" id="redirecionar3">Sobre nós</a>
+        <a href="https://wa.me/5583986534239" target="_blank" id="redirecionar3">Contato</a>
         <a href="" id="redirecionar4"><img src="./img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; "></a>
         <img src="./img/do-utilizador.png" width="35px" id="redirecionar4">
       </div>
@@ -28,17 +28,18 @@
         <!--imagem e slogan do sit-->
     <div class="linha">
       <div class="slogan">
-          <h1>Venha conhecer nossos capacetes <h3>mais que qualidade, segurança</h3></h1>
+          <h1 id="slogan">Onde segurança e estilo se encontram</h1>
+          <button type="button" id="botaoSlogan" href><a href="#aqui" id="botaoSlogan">Confira </a></button>
       </div>
       <div class="imagemGrande">
-        <img src="./img/raspopova-marina-Dyt3dpyDQNY-unsplash-Copy-edited.jpg-removebg.png" width="890px" style="background-image: linear-gradient(to top, #cfcfcf 90%, #c2c1c1) " >
+        <img src="./img/raspopova-marina-Dyt3dpyDQNY-unsplash-Copy-edited.jpg-removebg.png" width="800.5px" height="100%" style="background-image: linear-gradient(to top, #cfcfcf 90%, #c2c1c1)" >
       </div>
     </div>
     
 
     <!--LINKS DE NAVEGAÇÃO-->
     <div class="nav">
-      <div class="links">
+      <div class="links" id="aqui">
           <a href="#cpa" class="link" id="fechado">Capacetes abertos</a >
           <a href="#cpf" class="link" id="aberto">Capacetes fechados</a  >
           <a href="#vs" class="link" id="viseira">Viseiras</a >
@@ -49,7 +50,7 @@
         <!--CATALOGO DOS PRODUTOS-->
     <div class="catalogo">
       <div class="titulo">
-        <H1>BEM VINDO AO NOSSO CATÁLOGO</H1>
+        <H1>BEM VINDO(A) AO NOSSO CATÁLOGO</H1>
       </div>
 
       <!--PRODUTOS (CAPACETES ABERTOS)-->
@@ -62,13 +63,13 @@
           <div>
             <div class="capacetesAbertos">
               <div id="img1" >
-                <img src="./img/produtos/ABERTO1.jpeg" width="300px" height="300">
+                <img src="./img/produtos/ABERTO1.jpeg" width="250px" height="300">
               </div>
               <div id="img2">
-                <img src="./img/produtos/ABERTO2.jpeg" width="300px" height="300">
+                <img src="./img/produtos/ABERTO2.jpeg" width="250px" height="300">
               </div>
               <div id="img3">
-                <img src="./img/produtos/ABERTO3.jpeg" width="300px" height="300">
+                <img src="./img/produtos/ABERTO3.jpeg" width="250px" height="300">
               </div>
             </div>
             <div class="capacetesAbertos">
@@ -123,7 +124,7 @@
                 <img src="./img/produtos/ABERTO98.jpeg" width="300px" height="300">
               </div>
               <div id="img3">
-                <img src="./img/produtos/ABERTO.jpeg" width="300px" height="300">
+                
               </div>
             </div>
           </div>
@@ -140,7 +141,7 @@
                 <img src="./img/produtos/FECHADO2.jpeg" width="300px" height="300">
               </div>
               <div id="img3">
-                <img src="" width="300px" height="300">
+                
               </div>
             </div>
           </div>
@@ -166,10 +167,10 @@
                 <img src="./img/produtos/viseira4.jpeg" width="300px" height="300">
               </div>
               <div id="img2">
-                <img src="" width="300px" height="300">
+                
               </div>
               <div id="img3">
-                <img src="" width="300px" height="300">
+               
               </div>
             </div>
            
@@ -190,8 +191,53 @@
                 <img src="" width="300px">
               </div>
             </div>
-           
           </div>
-    </div>
+
+
+          <!--RODAPE PRETO DA PAGINA-->
+
+          <!--DAR COR PARA O FUNDO-->
+          <div id="fundoRodape">
+            <div class="rodape">
+              <!--SEPARAR NO DISPLAY FLEX (CADA COLUNA = CONT1)-->
+              <div class="cont1">
+                <h1 id="categoria">INSTITUCIONAL</h1>
+                <a href="sobreNos.html" id="acesso">Sobre nós</a><br>
+                <a href="" id="acesso">Alerta de fraude</a>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">DUVIDAS</h1>
+                <a href="" id="acesso">Politica de trocas e garantias</a><br>
+                <a href="" id="acesso">Pagamento e envio</a><br>
+                <a href="" id="acesso">Duvidas frequentes</a>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">FALE CONOSCO</h1>
+                <p id="acesso">Whatsapp: (83) 98653-4239<br>
+                              Telefone: (83) 99999-9999<br>
+                              Email: oldschool@gmail.com.br</p>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">NOSSO ENDEREÇO</h1>
+                <p id="acesso">Rua Jose Americo de Almeida, 202</p><br>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">RECEBA NOVIDADES</h1>
+                <input type="email" placeholder="Digite seu e-mail" id="caixaEmail"><button type="button" id="botaoEmail">OK</button>
+              </div>
+
+            </div>
+            <!--TRAÇO LARANJA NO RODAPE-->
+            <div class="traco"></div>
+
+            <!--PARTE DE PRETA BAIXO DA LINHA LARANJA-->
+            <div class="widgets"></div>
+            
+          </div>
+    
 </body>
 </html>
