@@ -108,7 +108,7 @@
     justify-content: center;
     background-color: rgb(2, 2, 2);
     height: 140px;
-    
+    border-top: rgb(255, 167, 0) 4px solid;
 }
 .cont1{
     background-color:black;

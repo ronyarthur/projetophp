@@ -15,9 +15,14 @@
     src: url(../fontes/Roboto-Light.ttf);
 }
 @font-face{
+    font-family: robotoSerif;
+    src: url(../fontes/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+@font-face{
     font-family: robotoRegular;
     src: url(../fontes/Roboto-Regular.ttf);
 }
+
 *{
     margin: 0;
     background-color: #cfcfcf;
@@ -77,7 +82,6 @@
     height: 38px;
     padding-top: 15px;
 }
-
 #fechado, #aberto, #viseira, #flip{
     background-color: #8D8F8C;
     text-decoration: none;
@@ -93,48 +97,6 @@
     text-decoration: underline;
     
 }
-
-.linha{
-    display: flex;
-    background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
-}
-
-.imagemGrande{
-    text-align: right;
-    
-}
-
-.slogan{
-    padding-top: 80px;
-    padding-left: 60px ;
-    background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
-    font-size: 20px;
-    font-family: slogan;
-}
-
-.slogan{
-    margin-left: 40px;
-}
-.slogan, .imagemGrande{
-    flex: 1;
-    
-}
-
-#botaoSlogan{
-    font-size: 20px;
-    margin-top: 20px;
-    background-color: rgb(63, 21, 21);
-    border-radius: 20px;
-    color: white;
-    font-family: robotoItalico;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
-#botaoSlogan:target{
-    color: blue;
-}
-
 .titulo{
     text-align: center;
     margin-bottom: 40px;
@@ -150,49 +112,77 @@
     flex: 1;
     text-align: center;
     margin-bottom: 35px;
+    
 } 
-#verMais{
-    background-color: rgb(155, 154, 154);
-    text-align: center;
-    color: rgb(46, 43, 43);
-    padding-top: 140px;
-    padding-bottom: 130px;
-    font-family: robotoNormal;
-    font-size: 25px;
-}
-#verMais:hover{
-    background-color: rgb(110, 110, 110);
-}
-.verMais, .vermais{
-    text-decoration: none;
-}
-
 
 .tituloDaArea{
     text-align: left;
     margin-bottom: 20px;
-    margin-left: 90px;
+    color: black;
     margin-top: 50px;
     font-family: robotoItalico;
+    
+}
+#cpa, #cpf, #vs, #fp{
+    padding-left: 90px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-image: linear-gradient(180deg, #cfcfcf 10px, #8D8F8C , #cfcfcf);
 }
 
-.descricaoDosCapacetes{
-    display: flex;
-    background-color: rgb(255, 167, 0) ;
+#marcaDoCapacete{
+    color: gray;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 47px;
+    font-family: robotoSerif;
+    font-size: 13px;
+    line-height: 20px;
 }
-#tituloTextoCapacete{
-    text-align: center;
-    font-family: robotoRegular;
-    margin-bottom: 10px;
+#marcaDoCapacete:hover{
+    color: #191919;
+    cursor: default;
+}
+
+#nomeDoCapacete{
+    color: black;
+    font-family: robotoSerif;
+    font-size: 18px;
+    line-height: 16px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
-.textoCapacetes{
-    background-color:rgb(255, 167, 0) ;
-    margin-left: 10px;
+#nomeDoCapacete:hover{
+    color: rgb(255, 167, 0);
 }
-.ImagemCapacete{
-    display: flex;
+
+#precoDoCapacete{
+    color: rgb(255, 167, 0);
+    font-family: robotoRegular;
+    font-size: 26px;
+    line-height: 31px;
+    cursor: pointer;
+    font-weight: bold;
 }
+
+#metodoDePagamento{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+}
+
+#parcelarPagamento{
+    color: rgb(99, 98, 98);
+    font-family: robotoNormal;
+    font-size: 10px;
+    line-height: 12px;
+}
+#linkandoProdutos{
+    text-decoration: none;
+}
+
 .rodape{
     display: flex;
     width: 100%;
