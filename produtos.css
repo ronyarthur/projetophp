@@ -1,29 +1,29 @@
 @font-face {
     font-family: slogan;
-    src:url(../fontes/Rumble\ Brave.otf);
+    src:url(fontes/Rumble-Brave.otf);
 }
 @font-face{
     font-family: roboto;
-    src: url(../fontes/Roboto-Black.ttf);
+    src: url(fontes/Roboto-Black.ttf);
 }
 @font-face{
     font-family: robotoItalico;
-    src: url(../fontes/Roboto-LightItalic.ttf);
+    src: url(fontes/Roboto-LightItalic.ttf);
 }
 @font-face{
     font-family: robotoNormal;
-    src: url(../fontes/Roboto-Light.ttf);
+    src: url(fontes/Roboto-Light.ttf);
 }
 @font-face{
     font-family: robotoSerif;
-    src: url(../fontes/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+    src: url(fontes/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
 }
 @font-face{
     font-family: robotoRegular;
-    src: url(../fontes/Roboto-Regular.ttf);
+    src: url(fontes/Roboto-Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     background-color: #cfcfcf;
     
