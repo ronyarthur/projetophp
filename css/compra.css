@@ -1,0 +1,87 @@
+@font-face {
+    font-family: slogan;
+    src:url(../fontes/Rumble\ Brave.otf);
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fontes/Roboto-Black.ttf);
+}
+@font-face{
+    font-family: robotoItalico;
+    src: url(../fontes/Roboto-LightItalic.ttf);
+}
+@font-face{
+    font-family: robotoNormal;
+    src: url(../fontes/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    background-color: #cfcfcf;
+    
+}
+
+.topo{
+    display: flex;
+    background-color: #c2c1c1;
+    
+}
+.logo{
+    flex: 1;
+    background-color: #c2c1c1;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.navbar{
+    flex: 1;
+    background-color: #c2c1c1;
+    text-align: right;
+    padding-right: 90px;
+    padding-top: 45px;
+}
+#logotipo{
+    background-color: #c2c1c1;
+    
+}
+#redirecionar1, #redirecionar2, #redirecionar3{
+    background-color: #c2c1c1;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: robotoItalico;
+    
+    
+}
+#redirecionar4{
+    margin-left: 20px;
+    background-color: #c2c1c1;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#redirecionar1:hover, #redirecionar2:hover, #redirecionar3:hover, #redirecionar4:hover{
+    text-decoration: underline;
+}
+
+.areaDaCompra{
+    border: 2px, solid, black;
+    display: flex;
+    height: 450px;
+    max-width: 80%;
+    text-align: center;
+    margin-left: 130px;
+}
+.compra, .imagem{
+    border: 2px dotted blue;
+    flex: 1;
+    height: 100%;
+}
