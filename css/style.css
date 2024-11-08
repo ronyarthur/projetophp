@@ -143,34 +143,37 @@
 }
 
 .capacetesAbertos, .capacetesFechados{
-    display: flex;
-    
+    display: flex; 
+    justify-content: center;
 }
 #img1, #img2, #img3{
-    flex: 1;
     text-align: center;
     margin-bottom: 35px;
+    width: 300px;
 } 
 #img1:hover, #img2:hover, #img3:hover{
-    border: 1px black solid;
+    background-color: black;
+    margin-bottom: 34px;
+    width: 300px;
 }
-#verMais{
-    background-color: rgb(155, 154, 154);
+.conferir{
     text-align: center;
-    color: rgb(46, 43, 43);
-    padding-top: 140px;
-    padding-bottom: 130px;
-    font-family: robotoNormal;
-    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
-#verMais:hover{
-    background-color: rgb(110, 110, 110);
-}
-.verMais, .vermais{
+#conferirProdutos{
+    background-color: black;
+    padding: 10px;
     text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: roboto;
+    letter-spacing: 1px;
 }
-
-
+#conferirProdutos:hover{
+    background-color: gray;
+}
 .tituloDaArea{
     text-align: left;
     margin-bottom: 20px;
