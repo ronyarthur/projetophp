@@ -22,7 +22,10 @@
     font-family: robotoRegular;
     src: url(../fontes/Roboto-Regular.ttf);
 }
-
+@font-face{
+    font-family: poppins;
+    src:url(../fontes/Poppins/Poppins-Thin.ttf)
+}
 *{
     margin: 0;
     background-color: #cfcfcf;
@@ -102,12 +105,13 @@
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
-    font-family: roboto;
+    font-family: poppins;
 }
 
 .capacetesAbertos, .capacetesFechados{
     display: flex;
-    
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #img1, #img2, #img3, #img4{
     flex: 1;
@@ -125,7 +129,7 @@
     margin-bottom: 20px;
     color: black;
     margin-top: 50px;
-    font-family: robotoItalico;
+    font-family: poppins;
     
 }
 #cpa, #cpf, #vs, #fp{
@@ -242,4 +246,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 30px;
+}
+.formEmail{
+    background-color: black;
 }

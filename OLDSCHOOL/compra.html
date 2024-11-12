@@ -31,14 +31,13 @@
         <div class="compra">
             <H1 id="nomeDoCapacete">NOME DO CAPACETE</H1>
             <p id="modeloDoCapacete">Modelo:</p>
-            <p id="tituloTamanho">Tamanho</p>
-            <div class="tamanhoDoCapacete">
-                <div class="quadradinho"><p id="quadradinho">56</p></div>
-                <div class="quadradinho"><p id="quadradinho">58</p></div>
-                <div class="quadradinho"><p id="quadradinho">60</p></div>
-                <div class="quadradinho"><p id="quadradinho">62</p></div>
-                <div class="quadradinho"><p id="quadradinho">64</p></div>
-            </div>
+            <form>
+              <p id="tituloTamanho">Tamanho</p>
+
+              <input type="checkbox" value="10" name="10" placeholder="10">
+            </form>
+            
+            
             <div class="pagar">
                 <div class="preço"><p id="preçoDoCapacete">R$ 500,00<p id="formaDePagamento">À vista ou PIX</p></p></div>
                 <div class="quantidade">
@@ -48,9 +47,7 @@
                         <p id="menos">-</p>
                     </div>
                 </div>
-                <a href=""><div class="comprar">
-                    <p class="botaoDeCompra">COMPRAR</p>
-                </div></a>
+                <input type="submit" class="botaoDeCompra" value="COMPRAR"></input>
             </div>
         </div>
     </div>
@@ -89,8 +86,11 @@
               </div>
 
               <div class="cont1">
-                <h1 id="categoria">RECEBA NOVIDADES</h1>
-                <input type="email" placeholder="Digite seu e-mail" id="caixaEmail"><button type="button" id="botaoEmail">OK</button>
+                
+                  <h1 id="categoria">RECEBA NOVIDADES</h1>
+                  <form class="formEmail">
+                    <input type="email" placeholder="Digite seu e-mail" id="caixaEmail"><input type="submit" id="botaoEmail"></input>
+                  </form>
               </div>
 
             </div>

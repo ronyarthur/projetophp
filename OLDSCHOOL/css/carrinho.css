@@ -22,6 +22,10 @@
     font-family: robotoSerif;
     src:url(../fontes/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf)
 }
+@font-face{
+    font-family: poppins;
+    src:url(../fontes/Poppins/Poppins-Thin.ttf)
+}
 *{
     margin: 0;
 }
@@ -47,7 +51,8 @@
     font-size: 15px;
     display: flex;
     align-items: center;
-    font-family: robotoNormal;
+    font-family: poppins;
+    font-weight: bold;
     
 }
 .itens li p{
@@ -63,17 +68,16 @@
     padding: 20px;
     text-align: left;
     font-size: 13px;
-    line-height: 12px;
+    
     margin-top: 20px;
     background-color: #c2c2c1;
     font-family: robotoSerif;
 }
 .descricao:hover{
     cursor: pointer;
-}
-.descricao:active{
     zoom: 1.5;
 }
+
 .preço{
     display: flex;
     border-top: 2px solid rgb(68, 63, 63);

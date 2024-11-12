@@ -193,7 +193,7 @@
     font-family: robotoSerif;
     font-weight: bold;
     font-size: 28px;
-    text-decoration-color: blue;
+    text-decoration:none;
     line-height: 50px;
     background-color: blue;
     color: white;
@@ -256,4 +256,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 30px;
+}
+.formEmail{
+    background-color: black;
 }
