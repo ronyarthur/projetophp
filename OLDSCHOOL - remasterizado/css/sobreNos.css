@@ -1,0 +1,162 @@
+@font-face {
+    font-family: slogan;
+    src:url(../fontes/Rumble\ Brave.otf);
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fontes/Roboto-Black.ttf);
+}
+@font-face{
+    font-family: robotoItalico;
+    src: url(../fontes/Roboto-LightItalic.ttf);
+}
+@font-face{
+    font-family: robotoNormal;
+    src: url(../fontes/Roboto-Light.ttf);
+}
+
+*{
+    margin: 0;
+    background-color: #cfcfcf;
+    
+}
+
+.topo{
+    display: flex;
+    background-color: #c2c1c1;
+    
+}
+.logo{
+    flex: 1;
+    background-color: #c2c1c1;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.navbar{
+    flex: 1;
+    background-color: #c2c1c1;
+    text-align: right;
+    padding-right: 90px;
+    padding-top: 45px;
+}
+#logotipo{
+    background-color: #c2c1c1;
+    
+}
+#redirecionar1, #redirecionar2, #redirecionar3{
+    background-color: #c2c1c1;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: robotoItalico;
+    
+    
+}
+#redirecionar4{
+    margin-left: 20px;
+    background-color: #c2c1c1;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#redirecionar1:hover, #redirecionar2:hover, #redirecionar3:hover, #redirecionar4:hover{
+    text-decoration: underline;
+}
+.links{
+    text-align: center;
+    background-color: #8D8F8C;
+    height: 38px;
+    padding-top: 15px;
+}
+
+.titulo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: roboto;
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+}
+.texto{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: robotoNormal;
+    color: rgb(124, 132, 139);
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.imagens{
+    text-align: center;
+}
+.fundador{
+    font-family: roboto;
+    color: #323232;
+}
+
+.rodape{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(2, 2, 2);
+    height: 140px;
+    border-top: #8d8f8c 4px solid;
+}
+.cont1{
+    background-color:black;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#categoria{
+    background-color: black;
+    color: #8d8f8c;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;    
+    font-weight: bold;
+}
+#acesso{
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    text-decoration: none;   
+}
+.traco{
+    background-color: #8d8f8c;
+    height: 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#fundoRodape{
+    background-color: black;
+}
+.widgets{
+    height: 30px;
+    background-color: black;
+}
+#botaoEmail{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    height: 35px;
+    background-color: #8d8f8c;
+}
+#caixaEmail{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 30px;
+}
+.formEmail{
+    background-color: black;
+}
