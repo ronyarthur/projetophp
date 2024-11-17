@@ -1,3 +1,8 @@
+<?php
+  if(!isset($_SESSION)){
+    session_start();
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,7 +39,6 @@
         <img src="./img/raspopova-marina-Dyt3dpyDQNY-unsplash-Copy-edited.jpg-removebg.png" width="800.5px" height="100%" style="background-image: linear-gradient(to top, #cfcfcf 90%, #c2c1c1)" >
       </div>
     </div>
-    
 
 
 
