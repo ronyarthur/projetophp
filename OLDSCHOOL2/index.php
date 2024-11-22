@@ -25,8 +25,8 @@
         <a href="Produtos.html"  id="redirecionar2">Produtos</a>
         <a href="./rodapé/sobreNos.html" id="redirecionar3">Sobre nós</a>
         <a href="https://wa.me/?text= ola, eu fiz uma compra pelo site e meu id é: (coloque o seu id da compra aqui)" target="_blank" id="redirecionar3">Contato</a>
-        <a href="./carrinho.php" id="redirecionar4"><img src="./img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; " alt="carrinho" name="carrinho"></a>
-        <a href="./login.html" id="minhaConta"><img src="./img/do-utilizador.png" width="35px" id="redirecionar4" alt="minha conta"></a>
+        <a href="./carrinho01.php" id="redirecionar4"><img src="./img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; " alt="carrinho" name="carrinho"></a>
+        <a href="./login.php" id="minhaConta"><img src="./img/do-utilizador.png" width="35px" id="redirecionar4" alt="minha conta"></a>
       </div>
     </div>
 
