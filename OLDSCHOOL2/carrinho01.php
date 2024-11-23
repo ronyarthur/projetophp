@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/carrinho.css">
     <script async src="carrinho.js"></script>
+    
 </head>
 <body>
     <div class="carrinho">
@@ -14,51 +16,59 @@
     </div>
 
     <div class="tabela">
-        <table class="tabelacarrinho">
-            <thead>
-                <th class="item">ITEM</th>
-                <th class="preço">PREÇO</th>
-                <th class="QUANTIDADE">QUANTIDADE</th>
-            </thead>
-            <tbody>
-                <tr class="produto">
-                    <td class="prod-escolher">
-                        <img class="prod-imagem" src="./img/produtos/ABERTO3.png" height="70px" width="70px" >
-                        <strong class="prod-titulo">CAPACETE</strong>
-                    </td>
-                    <td>
-                        <span class="produto2">R$399,99</span>
-                    </td>
-                    <td>
-                        <input type="number" value="2" min="0" class="quantidade">
-                        <button class="remover" type="button"> remover</button>
-                    </td>
-                </tr>
-                <tr class="produto">
-                    <td class="prod-escolher">
-                        <img class="prod-imagem" src="./img/produtos/FECHADO1.png" height="70px" width="70px" >
-                        <strong class="prod-titulo">CAPACETE</strong>
-                    </td>
-                    <td>
-                        <span class="produto2">R$529,00</span>
-                    </td>
-                    <td>
-                        <input type="number" value="1" min="0" class="quantidade">
-                        <button class="remover" type="button"> remover</button>
-                    </td>
-                </tr>
+            <table class="tabelacarrinho">
+            
+                <thead>
+                    <th class="item">ITEM</th>
+                    <th class="preço">PREÇO</th>
+                    <th class="QUANTIDADE">QUANTIDADE</th>
+                </thead>
+            
+                <tbody>
+                    <tr class="produto">
+                        <td class="prod-escolher">
+                            <img class="prod-imagem" src="./img/produtos/ABERTO3.png" height="70px" width="70px" >
+                            <strong class="prod-titulo">CAPACETE</strong>
+                        </td>
+                        <td>
+                            <span class="produto2">R$399,99</span>
+                        </td>
+                        <td class="quantos">
+                            <input type="number" value="2" min="0" max="3" class="quantidade">
+                            <button class="remover" type="button"> remover</button>
+                        </td>
+                    </tr>
+                    <tr class="produto">
+                        <td class="prod-escolher">
+                            <img class="prod-imagem" src="./img/produtos/FECHADO1.png" height="70px" width="70px" >
+                            <strong class="prod-titulo">CAPACETE</strong>
+                        </td>
+                        <td>
+                            <span class="produto2">R$529,00</span>
+                        </td>
+                        <td class="quantos">
+                            <input type="number" value="1" min="0" max="3" class="quantidade">
+                            <button class="remover" type="button"> remover</button>
+                        </td>
+                    </tr>
 
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" class="total">
-                    <strong>TOTAL</strong>
-                    <span>R$928,99</span>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-        <button type="button">Finalizar Compra</button>
+                </tbody>
+                
+            
+                
+                    <tfoot >
+                        <tr class="valor">
+                            <td colspan="3" class="total">
+                            <strong>TOTAL</strong>
+                            <span>R$928,99</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+               
+            </table>
+                    <button class="finalzar" type="button" >Finalizar Compra</button>
+            
+                
     </div>
     
     <!--RODAPE PRETO DA PAGINA-->
