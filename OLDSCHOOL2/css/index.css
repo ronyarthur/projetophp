@@ -27,7 +27,21 @@
     background-color: #cfcfcf;
     
 }
-
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+body::-webkit-scrollbar-track {
+    background: #cfcfcf;        
+  }  
+body::-webkit-scrollbar-thumb{
+    background-color: #8d8f8c;
+    border-radius: 20px;
+    border-left:2px solid #cfcfcf;
+    border-right:2px solid #cfcfcf;
+    width: 50%;
+    margin: 0;
+    
+  }
 .topo{
     display: flex;
     background-color: #c2c1c1;
@@ -84,16 +98,40 @@
     background-color: #8d8f8c;
 }
 
-.container{
+@keyframes alternar {
+    0%{
+        background-image: url(../img/imagine_image_07b5b446-f370-4614-b13f-1d3476f286ad.PNG);
+    }
+    50%{
+        background-image: url(../img/natal1.png);
+    }
+    100%{
+        background-image: url(../img/imagine_image_07b5b446-f370-4614-b13f-1d3476f286ad.PNG);
+    }
+}
+.anuncio{
     display: flex;
     overflow-x: auto;
-    background-color: #8d8f8c;
+    background-color: #cfcfcf;
+    animation: alternar 17s infinite;
+    animation-delay: 3s;
+    animation-direction: left;
+    height: 580px;
+    width: 100%;
+    background-image: url(../img/imagine_image_07b5b446-f370-4614-b13f-1d3476f286ad.PNG);
+    
+}
+
+.container{
+    text-align: center;
+}
+#topoDoTopo{
+    height: 100vh;
+    background-color: #c2c1c1;
 }
 .container img{
-    padding-right: 15px;
     height: auto;
     margin-top: 5px;
-    
 }
 .avisos{
     display: flex;
@@ -126,6 +164,9 @@
 .linha{
     display: flex;
     background-image: linear-gradient(to top, #cfcfcf 90% , #c2c1c1 ) ;
+    position: absolute;
+    bottom: 0;
+    
 }
 
 .imagemGrande{

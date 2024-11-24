@@ -14,29 +14,31 @@
 </head>
 <body>
     <!--topo-->
-    <div class="topo" id="fundoTopo">
-    <!--LOGO DO TOPO-->
-      <div class="logo">
-        <img src="./img/Sem Título-1-Photoroom.png" width="100" id="logotipo">
+    <div id="topoDoTopo">
+      <div class="topo" id="fundoTopo">
+      <!--LOGO DO TOPO-->
+        <div class="logo">
+          <img src="./img/Sem Título-1-Photoroom.png" width="100" id="logotipo">
+        </div>
+        <!--LINKS DE CIMA-->
+        <div class="navbar">
+          <a href="" id="redirecionar1">Pagina principal</a>
+          <a href="Produtos.html"  id="redirecionar2">Produtos</a>
+          <a href="./rodapé/sobreNos.html" id="redirecionar3">Sobre nós</a>
+          <a href="https://wa.me/?text= ola, eu fiz uma compra pelo site e meu id é: (coloque o seu id da compra aqui)" target="_blank" id="redirecionar3">Contato</a>
+          <a href="./carrinho01.html" id="redirecionar4"><img src="./img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; " alt="carrinho" name="carrinho"></a>
+          <a href="./login.php" id="minhaConta"><img src="./img/do-utilizador.png" width="35px" id="redirecionar4" alt="minha conta"></a>
+        </div>
       </div>
-      <!--LINKS DE CIMA-->
-      <div class="navbar">
-        <a href="" id="redirecionar1">Pagina principal</a>
-        <a href="Produtos.html"  id="redirecionar2">Produtos</a>
-        <a href="./rodapé/sobreNos.html" id="redirecionar3">Sobre nós</a>
-        <a href="https://wa.me/?text= ola, eu fiz uma compra pelo site e meu id é: (coloque o seu id da compra aqui)" target="_blank" id="redirecionar3">Contato</a>
-        <a href="./carrinho01.php" id="redirecionar4"><img src="./img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; " alt="carrinho" name="carrinho"></a>
-        <a href="./login.php" id="minhaConta"><img src="./img/do-utilizador.png" width="35px" id="redirecionar4" alt="minha conta"></a>
-      </div>
-    </div>
 
-        <!--imagem e slogan do sit-->
-    <div class="linha">
-      <div class="slogan">
-          <h1 id="slogan">Onde segurança e estilo se encontram</h1>
-      </div>
-      <div class="imagemGrande">
-        <img src="./img/raspopova-marina-Dyt3dpyDQNY-unsplash-Copy-edited.jpg-removebg.png" width="800.5px" height="100%" style="background-image: linear-gradient(to top, #cfcfcf 90%, #c2c1c1)" >
+          <!--imagem e slogan do sit-->
+      <div class="linha">
+        <div class="slogan">
+            <h1 id="slogan">Onde segurança e estilo se encontram</h1>
+        </div>
+        <div class="imagemGrande">
+          <img src="./img/raspopova-marina-Dyt3dpyDQNY-unsplash-Copy-edited.jpg-removebg.png" width="800.5px" height="100%" style="background-image: linear-gradient(to top, #cfcfcf 90%, #c2c1c1)" >
+        </div>
       </div>
     </div>
 
@@ -49,8 +51,8 @@
     </div>
 
     <div class="container">
-      <img src="./img/imagine_image_07b5b446-f370-4614-b13f-1d3476f286ad.PNG" alt="" width="100%" height="100%" id="movable">
-      <img src="./img/natal1.PNG" alt="" width="100%" height="10%">
+      <div class="anuncio"></div>
+      
     </div>
 
 
@@ -66,7 +68,7 @@
       </div>
       
     </div>
-
+    
 
       <!--PRODUTOS (CAPACETES ABERTOS)-->
       <div class="capacetes">
@@ -79,22 +81,22 @@
             <div class="capacetesAbertos">
             <a href="./abaDeCompra/c1.html">  
               <div id="img1" >
-                <img src="./img/produtos/ABERTO1.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO1.png" width="300px" height="300px">
               </div>
             </a>
             <a  href="./abaDeCompra/c2.html">
               <div id="img2">
-                <img src="./img/produtos/ABERTO2.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO2.png" width="300px" height="300px">
               </div>
             </a>
             <a  href="./abaDeCompra/c3.html">
               <div id="img3">
-                <img src="./img/produtos/ABERTO3.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO3.png" width="300px" height="300px">
               </div>
             </a>
             <a  href="./abaDeCompra/c4.html">
               <div id="img1" >
-                <img src="./img/produtos/ABERTO4.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO4.png" width="300px" height="300px">
               </div>
             </a>
             </div>
@@ -102,7 +104,7 @@
             <div class="capacetesAbertos">
             <a  href="./abaDeCompra/c4.html">
               <div id="img1" >
-                <img src="./img/produtos/ABERTO4.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO4.png" width="300px" height="300px">
               </div>
             </a>
             <a  href="./abaDeCompra/c5.html">
@@ -117,7 +119,7 @@
             </a>
             <a  href="./abaDeCompra/c4.html">
               <div id="img1" >
-                <img src="./img/produtos/ABERTO4.png" width="370px" height="300px">
+                <img src="./img/produtos/ABERTO4.png" width="300px" height="300px">
               </div>
             </a>
             </div>

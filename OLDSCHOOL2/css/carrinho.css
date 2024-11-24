@@ -56,9 +56,14 @@ th{
     min-width: 500px;
     max-width: 500px;
     font-family: poppins;
-
 }
-
+#prod-escolher{
+        display: flex;
+        align-items: center;
+}
+.prod-escolher p{
+    margin-left: 15px;
+}
 img{
     padding: 15px;
 }
@@ -74,11 +79,8 @@ img{
     font-family: robotoNormal;
 }
 .remover{
-    align-items: center;
-    justify-content: center;
+    
     font-size: 15px;
-    height: 32px;
-    bottom: -50px;
     margin-left: 10px;
     background-color: rgb(160, 21, 21);
     color: rgba(204, 201, 201, 0.637);
@@ -87,10 +89,11 @@ img{
 }
 .quantos{
     display: flex;
-    margin-top: 40px;
+    
 }
 .quantos .quantidade{
     max-height: 35px;
+    
 }
 .finalizar{
     padding: 5px;
