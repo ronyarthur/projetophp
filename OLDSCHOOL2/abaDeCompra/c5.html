@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLD SCHOOL</title>
     <link rel="stylesheet" href="../css/compra.css">
+    <script src="../carrinho.js"></script>
 </head>
 <body>
     <!--topo-->
@@ -29,10 +30,8 @@
         <div class="imagem"><img src="../img/produtos/ABERTO5.png" id="capacete"></div>
 
         <div class="compra">
-          <H1 id="nomeDoCapacete">CAPACETE OLD SCHOOL PRETO COM DETALHES</H1>
-          <div class="preço">
-            <p id="preçoDoCapacete">R$ 399,99<p id="formaDePagamento">À vista, PIX ou cartões.</p></p>
-          </div>
+          <H1 class="nomeDoCapacete">CAPACETE OLD SCHOOL PRETO COM DETALHES</H1>
+          
 
           <p id="modeloDoCapacete">Modelo: Aberto com oculos embutido.</p>
           <p id="modeloDoCapacete">Acompanha: Balaclava</p>
@@ -51,7 +50,12 @@
                   </select><br><br>          
               </div>
                 
-              <button type="button" id="enviar" class="eviar-carrinho">ADICIONAR AO CARRINHO</button>
+              <div class="adicionar">
+                <div class="preço">
+                  <p class="preçoDoCapacete">R$ 399,99<p id="formaDePagamento">À vista, PIX ou cartões.</p></p>
+                </div>
+               <button type="button" id="enviar" class="eviar-carrinho">ADICIONAR AO CARRINHO</button>
+              </div>
             </form>
           </div>
         </div>

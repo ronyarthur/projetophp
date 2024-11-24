@@ -156,7 +156,7 @@
     cursor: default;
 }
 
-#nomeDoCapacete{
+.nomeDoCapacete{
     color: black;
     font-family: poppins;
     font-size: 14px;
@@ -171,11 +171,11 @@
     font-size: 12px;
     text-align: center;
 }
-#nomeDoCapacete:hover{
+.nomeDoCapacete:hover{
     color: rgb(255, 167, 0);
 }
 
-#precoDoCapacete{
+.precoDoCapacete{
     color: rgb(255, 167, 0);
     font-family: robotoRegular;
     font-size: 26px;
