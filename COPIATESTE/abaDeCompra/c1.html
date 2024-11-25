@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLD SCHOOL</title>
+    <link rel="stylesheet" href="../css/compra.css">
+    <script src="../carrinho.js" defer></script>
+</head>
+<body>
+    <!-- Topo -->
+    <div class="topo" id="fundoTopo">
+        <div class="logo">
+            <img src="../img/Sem Título-1-Photoroom.png" width="100" id="logotipo">
+        </div>
+        <div class="navbar">
+            <a href="../index.php" id="redirecionar1">Página Principal</a>
+            <a href="../Produtos.html" id="redirecionar2">Produtos</a>
+            <a href="../rodapé/sobreNos.html" id="redirecionar3">Sobre Nós</a>
+            <a href="https://wa.me/5583986534239" target="_blank" id="redirecionar3">Contato</a>
+            <a href="../carrinho01.html" id="redirecionar4"><img src="../img/carrinho-carrinho.png" width="30px" 
+              style="background-color: #c2c1c1;"></a>
+              <img src="../img/do-utilizador.png" width="35px" id="redirecionar4">
+        </div>
+    </div>
+
+    <!-- Área da Compra -->
+    <div class="areaDaCompra">
+        <div class="imagem">
+            <img src="../img/produtos/ABERTO1.png" id="capacete">
+        </div>
+        <div class="compra">
+            <h1 class="nomeDoCapacete" style="text-align: left;">CAPACETE OLD SCHOOL BRANCO FOSCO</h1>
+            <p id="modeloDoCapacete">Modelo: Aberto com óculos embutido.</p>
+            <p id="modeloDoCapacete">Acompanha: Balaclava</p>
+
+            <div class="formulario">
+                <div class="tamanho">
+                    <label for="tamanho">Escolha o tamanho do capacete:</label><br>
+                    <select id="tamanho">
+                        <option value="" disabled selected>Clique aqui</option>
+                        <option value="56">56</option>
+                        <option value="58">58</option>
+                        <option value="60">60</option>
+                    </select><br><br>
+                </div>
+                <div class="adicionar">
+                    <div class="preço">
+                        <p class="preçoDoCapacete">R$ 399,99<p id="formaDePagamento">À vista, PIX ou cartões.</p></p>
+                    </div>
+                    <button type="button" id="enviar" class="eviar-carrinho">ADICIONAR AO CARRINHO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para adicionar ao carrinho -->
+    <script>
+        document.getElementById('enviar').addEventListener('click', function () {
+            const nome = document.querySelector('.nomeDoCapacete').innerText;
+            const preco = document.querySelector('.preçoDoCapacete').innerText;
+            const imagem = document.querySelector('#capacete').src;
+            const tamanho = document.getElementById('tamanho').value;
+
+            if (!tamanho) {
+                alert('Selecione um tamanho antes de adicionar ao carrinho.');
+                return;
+            }
+
+            const produto = { nome, preco, imagem, tamanho };
+
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push(produto);
+
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert('Produto adicionado ao carrinho!');
+        });
+    </script>
+</body>
+</html>

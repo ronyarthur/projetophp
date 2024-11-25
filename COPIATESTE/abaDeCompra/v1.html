@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLD SCHOOL</title>
+    <link rel="stylesheet" href="../css/compra.css">
+    <script src="../carrinho.js"></script>
+</head>
+<body>
+    <!--topo-->
+    <div class="topo" id="fundoTopo">
+      <!--LOGO DO TOPO-->
+        <div class="logo">
+          <img src="../img/Sem Título-1-Photoroom.png" width="100" id="logotipo">
+        </div>
+        <!--LINKS DE CIMA-->
+        <div class="navbar">
+          <a href="../index.php" id="redirecionar1">Pagina principal</a>
+          <a href="../Produtos.html"  id="redirecionar2">Produtos</a>
+          <a href="../rodapé/sobreNos.html" id="redirecionar3">Sobre nós</a>
+          <a href="https://wa.me/5583986534239" target="_blank" id="redirecionar3">Contato</a>
+          <a href="../carrinho01.html" id="redirecionar4"><img src="../img/carrinho-carrinho.png" width="30px" style="background-color: #c2c1c1; "></a>
+          <img src="../img/do-utilizador.png" width="35px" id="redirecionar4">
+        </div>
+  </div>
+
+    <div class="areaDaCompra">
+
+        <div class="imagem"><img src="../img/produtos/VISEIRA1.png" id="capacete"></div>
+
+        <div class="compra">
+          <H1 class="nomeDoCapacete">VISEIRA BOLHA COM FUMÊ METALICO</H1>
+         
+
+          <p id="modeloDoCapacete">Modelo: bolha </p>
+          <p id="modeloDoCapacete">Tamanho: único</p>
+          
+          <div class="formulario">
+
+              
+            <form action="../compra.php" method="get" >
+              <div class="adicionar">
+                <div class="preço">
+                  <p class="preçoDoCapacete">R$ 69,00<p id="formaDePagamento">À vista, PIX ou cartões.</p></p>
+                </div>
+                <button type="button" id="enviar" class="eviar-carrinho">ADICIONAR AO CARRINHO</button>
+            </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <!--RODAPE PRETO DA PAGINA-->
+
+          <!--DAR COR PARA O FUNDO-->
+          <div id="fundoRodape">
+            <div class="rodape">
+              <!--SEPARAR NO DISPLAY FLEX (CADA COLUNA = CONT1)-->
+              <div class="cont1">
+                <h1 id="categoria">INSTITUCIONAL</h1>
+                <a href="../rodapé/sobreNos.html" id="acesso">Sobre nós</a><br>
+                <a href="../rodapé/alertaDeFraude.html" id="acesso">Alerta de fraude</a>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">DUVIDAS</h1>
+                <a href="../rodapé/trocaseGarantia.html" id="acesso">Politica de trocas e garantias</a><br>
+                <a href="../rodapé/pagamentoeEnvio.html" id="acesso">Pagamento e envio</a><br>
+                
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">FALE CONOSCO</h1>
+                <p id="acesso">Whatsapp: (83) 98653-4239<br>
+                              Telefone: (83) 98653-4239<br>
+                              Email: oldschool@gmail.com.br</p>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">NOSSO ENDEREÇO</h1>
+                <a href="https://www.google.com/maps/place/Rua+Radialista+Severino+Gomes+de+Brito,+179+-+Jos%C3%A9+Am%C3%A9rico+de+Almeida,+Jo%C3%A3o+Pessoa+-+PB,+58074-060/@-7.1727502,-34.8606472,17z/data=!3m1!4b1!4m6!3m5!1s0x7acc276c0825dd3:0xeebcf815613aeeea!8m2!3d-7.1727555!4d-34.8580723!16s%2Fg%2F11g9mxfc38?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;"><p id="acesso" class="endereço">Rua Radialista Severino Gomes de Brito,179</p></a><br>
+              </div>
+
+              <div class="cont1">
+                <h1 id="categoria">RECEBA NOVIDADES</h1>
+                <input type="email" placeholder="Digite seu e-mail" id="caixaEmail"><button type="button" id="botaoEmail">OK</button>
+              </div>
+
+            </div>
+            <!--TRAÇO LARANJA NO RODAPE-->
+            <div class="traco"></div>
+
+            <!--PARTE DE PRETA BAIXO DA LINHA LARANJA-->
+            <div class="widgets"></div>
+            
+          </div>
+    <!-- Script para adicionar ao carrinho -->
+    <script>
+      document.getElementById('enviar').addEventListener('click', function () {
+          const nome = document.querySelector('.nomeDoCapacete').innerText;
+          const preco = document.querySelector('.preçoDoCapacete').innerText;
+          const imagem = document.querySelector('#capacete').src;
+          const tamanho = document.getElementById('tamanho').value;
+
+          if (!tamanho) {
+              alert('Selecione um tamanho antes de adicionar ao carrinho.');
+              return;
+          }
+
+          const produto = { nome, preco, imagem, tamanho };
+
+          const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+          carrinho.push(produto);
+
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+          alert('Produto adicionado ao carrinho!');
+      });
+  </script>
+</body>
+</html>
