@@ -119,11 +119,11 @@
 }
 .preço{
     text-align: left;
-    margin-left: 56px;
     margin-top: 20px;
+    font-size: 50px;
 }
 #preçoDoCapacete{
-    font-size: 50px;
+    font-size: 500px;
     font-family: poppins;
     color: black;
     font-weight: bold;

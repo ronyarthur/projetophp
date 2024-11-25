@@ -30,12 +30,14 @@
 }
 .titulo{
     
-    padding-left: 30px;
+    
     padding-top: 30px;
     padding-bottom: 10px;
     font-size: 15px;
     margin-bottom: 30PX;
     font-family: poppins;
+    text-align: center;
+    border-bottom: 1px black solid;
 }
 
 
@@ -51,6 +53,7 @@ thead{
 
 th{
     font-family: poppins;
+   
 }
 .prod-escolher{
     min-width: 500px;
@@ -82,8 +85,8 @@ img{
     
     font-size: 15px;
     margin-left: 10px;
-    background-color: rgb(158, 60, 60);
-    color: rgba(204, 201, 201, 0.667);
+    background-color: rgb(160, 21, 21);
+    color: rgba(204, 201, 201, 0.637);
     border-radius: 10px;
     font-family: roboto;
 }
@@ -98,19 +101,54 @@ img{
 .finalizar{
     padding: 5px;
     font-size: 10px;
-    font-family: poppins;
-    color: black;
-    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
 }
-
-
-
-
-.valor{
-    border: 20px solid black;
+#finalizar{
+    text-align: center;
     
 }
 
+table{
+    display: flex;
+}
+
+.um, .dois{
+    flex: 1
+    ;
+}
+
+tfoot{
+    margin-left: 100px;
+    width: 300px;
+    padding: 50px 100px 100px 100px;
+    justify-content: center;
+    
+}
+tfoot td{
+    border: 2px solid black;
+    box-shadow: 4px 4px 2px 0px black;
+    width: 300px;
+    height: 300px;
+}
+
+.totalDeTudo strong{
+    
+    color: white;
+    font-family: poppins;
+    font-size: 25px;
+    
+}
+.totalDeTudo{
+    text-align: center  ;
+}
+.preçoDeTudo{
+    font-size: 25px;
+    font-family: roboto;
+    text-align: center;
+    margin-bottom: 100px;
+}
 
 
 

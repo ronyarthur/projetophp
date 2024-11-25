@@ -17,14 +17,14 @@
 
     <div class="tabela">
             <table class="tabelacarrinho">
-            
-                <thead>
+            <div class="um">
+                <thed>
                     <th class="item">ITEM</th>
                     <th class="preço">PREÇO</th>
                     <th class="QUANTIDADE">QUANTIDADE</th>
-                </thead>
+                </thed>
             
-                <tbody>
+                <tboy>
                     <tr class="produto">
                         <td class="prod-escolher" id="prod-escolher">
                             <img class="prod-imagem" src="./img/produtos/ABERTO3.png" height="70px" width="70px" >
@@ -91,21 +91,28 @@
                         </td>
                     </tr>
 
-                </tbody>
-                
+                </tboy>
+                </div>
             
-                
+                <div class="dois">
                     <tfoot >
                         <tr class="valor">
                             <td colspan="3" class="total">
-                            <p><strong>TOTAL</strong></p>
-                            <span>R$928,99</span>
+                            
+                            <p class="totalDeTudo"><strong>TOTAL</strong></p>
+                            <p class="preçoDeTudo"><span>R$928,99</span></p>
+                            <div id="finalizar">
+                                <button class="finalizar" type="button" >Finalizar Compra</button>
+                            </div>
                             </td>
+                            
                         </tr>
+                        
                     </tfoot>
-               
+                    
+                </div>
             </table>
-                    <button class="finalizar" type="button" >Finalizar Compra</button>
+                
             
                 
     </div>
